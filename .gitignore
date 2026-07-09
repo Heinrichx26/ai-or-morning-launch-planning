@@ -1,0 +1,47 @@
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# LaTeX build products
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.spl
+*.synctex.gz
+article/trc_elsarticle/build/
+article/trc_elsarticle/generated/
+
+# Local QA and temporary outputs
+tmp/
+*.tmp
+~$*
+
+# Large public raw-data caches; scripts document how to regenerate them
+article/
+data/
+results/
+sources/
+data/raw_us_bts/
+data/weather_asos/
+
+# Submission-only compiled copies and office lock files
+article/trc_elsarticle/submission/~$*
+src/trc_launch/build_submission_docx.py
+src/trc_launch/check_highlights_length.py
+src/trc_launch/check_submission_docx.py
+src/trc_launch/export_submission_docx_pdf.ps1
+src/trc_launch/update_cover_letter_title.py
+src/trc_launch/update_cover_letter_vsi_title.py
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
