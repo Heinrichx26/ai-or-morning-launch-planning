@@ -40,3 +40,9 @@ The method solves a regret portfolio on an adaptive certificate-filtered candida
 - IEM ASOS/AWOS/METAR weather features for the full scenario layer.
 - Weather cache window: 04:00-12:00 airport-local time.
 - Batch weather downloads must reuse `data/weather_asos/` cache and respect public endpoint rate limiting.
+
+## Environmental conversion
+
+| Batch | Purpose | Command | Output |
+|---|---|---|---|
+| Batch 35 environment | Convert 360-instance launch metrics to taxi fuel and CO2 with ICAO/EEA LTO factors | `python -m src.trc_launch.environmental_eval --mode convert` | `results/trc_smoke/batch35_environment/` and `article/trc_elsarticle/generated/environment_method_summary.csv` |

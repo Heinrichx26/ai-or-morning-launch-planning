@@ -127,7 +127,7 @@ def problem_schematic() -> None:
     _arrow(ax, (0.77, 0.62), (0.77, 0.40))
     _arrow(ax, (0.64, 0.29), (0.63, 0.14))
     _arrow(ax, (0.50, 0.40), (0.50, 0.23))
-    ax.text(0.5, 0.95, "Weather-indexed multi-airport morning launch assignment", ha="center", fontsize=12)
+    ax.text(0.5, 0.95, "Overnight fleet assignment before weather-disaster launch capacity is known", ha="center", fontsize=10.5)
     _save(fig, "fig1_problem_schematic")
 
 
